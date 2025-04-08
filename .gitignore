@@ -26,6 +26,5 @@ build/
 dist/
 
 # 忽略特定的文档或临时文件
-*.md~
 *.tmp
 .DS_Store
