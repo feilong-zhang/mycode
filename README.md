@@ -1,8 +1,2 @@
 # mycode
-我的学习记录
-<<<<<<< HEAD
-![[408/file/img/Pasted image 20250409125535.png]]
-<img src="408/file/img/Pasted image 20250409125535.png">
-
-![""](408/file/img/Pasted%20image%2020250409135502.png)
-![](408/file/img/Pasted%20image%2020250409135502.png)
+我的考研408学习记录
