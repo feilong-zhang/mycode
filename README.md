@@ -1,5 +1,6 @@
 # mycode
 我的学习记录
+<<<<<<< HEAD
 ![[408/file/img/Pasted image 20250409125535.png]]
 <img src="408/file/img/Pasted image 20250409125535.png">
 
