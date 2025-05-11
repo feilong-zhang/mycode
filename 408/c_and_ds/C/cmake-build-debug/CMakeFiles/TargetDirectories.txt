@@ -1,0 +1,3 @@
+C:/Users/Wing9/OneDrive/桌面/ky408/mycode/408/c_and_ds/C/cmake-build-debug/CMakeFiles/C.dir
+C:/Users/Wing9/OneDrive/桌面/ky408/mycode/408/c_and_ds/C/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Wing9/OneDrive/桌面/ky408/mycode/408/c_and_ds/C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
