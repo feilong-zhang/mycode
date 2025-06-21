@@ -54,33 +54,41 @@ bool ListDel(SeqList* P_L,int i,int* e){//删除第i个位置的元素
 	return true;
 } 
 
-int LocateElem(SeqList* P_L,int e){
-	int i=0;
+void LocateX(SeqList* P_L,int x){
+	int i=0,j=0,k=0;
 	for(;i<P_L->length;i++){
-		if(P_L->data[i]==e)
-		return i+1;
+		if(P_L->data[i]>=x){
+			if(P_L->data[i]==x){
+				int mid=P_L->data[i+1];
+				P_L->data[i+1]=x;
+				P_L->data[i]=mid;return;
+			}
+			else{
+				for(j=P_L->length;j>=i;j--){
+					P_L->data[j]=P_L->data[j-1];
+				}P_L->data[i]=x;P_L->length++;return;
+			}
+			
+		}
 	}
-	return 0;
 }
 
 int main(){
 	SeqList L;
+	
 	InitList(&L);//&在C语言中是取地址的意思 
-	ListInsert(&L,1,2);
-	ListInsert(&L,2,1);
-	ListInsert(&L,3,23);
-	ListInsert(&L,4,10);
+	
+	ListInsert(&L,1,1);
+	ListInsert(&L,2,3);
+	ListInsert(&L,3,5);
+	ListInsert(&L,4,9);
+	ListInsert(&L,5,11);
+	ListInsert(&L,6,13);
+	
+	ListPrint(&L); 
+	LocateX(&L,8);
 	ListPrint(&L);
-	int e=-1;
-	if(ListDel(&L,2,&e))
-		printf("删除的元素是%d\n",e);
-	else printf("删除失败！\n"); 
+	LocateX(&L,8);
 	ListPrint(&L);
-	int mubiao=23;
-	int tar=-1;
-	tar=LocateElem(&L,mubiao);
-	if(tar!=-1)
-		printf("%d在顺序表中第%d个！\n",mubiao,tar);
-	else
-	printf("%d不在该顺序表中！",mubiao); 
+
 } 
